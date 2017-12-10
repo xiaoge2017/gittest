@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>git1</title>
+    <link rel="stylesheet" href="/static/css/git1.css">
+</head>
+<body>
+{% for foo in gituser %}
+    <ul>用户
+        <li>{{ foo.user }}</li>
+        <li>{{ foo.password }}</li>
+    </ul>
+{% endfor %}
+
+
+
+
+</body>
+</html>
