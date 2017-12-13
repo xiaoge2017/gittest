@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>欢迎登录{{ current_user }}</h2>
+
+<div>
+    <h3>收藏网页</h3>
+    {% for row in obj %}
+    <ul>{{ row.wid_id }}
+        {% for foo in obj %}
+            <li>{{ foo.wsid_id }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor  %}
+</div>
+</body>
+</html>
